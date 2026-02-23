@@ -316,7 +316,6 @@ namespace DasBlog.Web.Models.AdminViewModels
 		public bool EntryTitleAsLink { get; set; }
 		public bool ObfuscateEmail { get; set; }
 		public bool EnableAutoPingback { get; set; }
-		public string EditPassword { get; set; }
 		public string ProfilesDir { get; set; }
 		public string BinariesDirRelative { get; set; }
 		public bool EnableReferralUrlBlackList { get; set; }
@@ -345,7 +344,6 @@ namespace DasBlog.Web.Models.AdminViewModels
 		public double DefaultLongitude { get; set; }
 		public bool EnableDefaultLatLongForNonGeoCodedPosts { get; set; }
 		public bool HtmlTidyContent { get; set; }
-		public string RSSEndPointRewrite { get; set; }
 		public bool CategoryAllEntries { get; set; }
 				public string AllowedHosts { get; set; }
 

@@ -41,7 +41,6 @@ namespace DasBlog.Tests.UnitTests
 		public bool ShowItemDescriptionInAggregatedViews { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public int DisplayTimeZoneIndex { get => 4; set => throw new NotImplementedException(); }
 		public bool AdjustDisplayTimeZone { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-		public string EditPassword { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public string ContentDir { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public string LogDir { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public string BinariesDir { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
@@ -98,7 +97,6 @@ namespace DasBlog.Tests.UnitTests
 		public bool EnableDefaultLatLongForNonGeoCodedPosts { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public bool HtmlTidyContent { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public string TitlePermalinkSpaceReplacement { get => "-"; set => throw new NotImplementedException(); }
-		public string RSSEndPointRewrite { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public string CheesySpamQ { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public string CheesySpamA { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public XmlElement[] anyElements { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }

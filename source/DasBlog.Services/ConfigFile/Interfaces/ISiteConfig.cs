@@ -114,8 +114,6 @@ namespace DasBlog.Services.ConfigFile.Interfaces
 
         bool AdjustDisplayTimeZone { get; set; }
 
-        string EditPassword { get; set; }
-
         string ContentDir { get; set; }
 
         string LogDir { get; set; }
@@ -229,8 +227,6 @@ namespace DasBlog.Services.ConfigFile.Interfaces
         bool HtmlTidyContent { get; set; }
 
         string TitlePermalinkSpaceReplacement { get; set; }
-
-        string RSSEndPointRewrite { get; set; }
 
         string CheesySpamQ { get; set; }
 

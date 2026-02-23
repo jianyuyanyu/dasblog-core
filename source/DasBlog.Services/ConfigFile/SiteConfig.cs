@@ -109,7 +109,6 @@ namespace DasBlog.Services.ConfigFile
 
 		public int DisplayTimeZoneIndex { get; set; }
         public bool AdjustDisplayTimeZone { get; set; }
-        public string EditPassword { get; set; }
         public string ContentDir { get; set; }
         public string LogDir { get; set; }
         public string BinariesDir { get; set; }
@@ -167,7 +166,6 @@ namespace DasBlog.Services.ConfigFile
         public bool EnableDefaultLatLongForNonGeoCodedPosts { get; set; }
         public bool HtmlTidyContent { get; set; }
         public string TitlePermalinkSpaceReplacement { get; set; }
-        public string RSSEndPointRewrite { get; set; }
         public string CheesySpamQ { get; set; }
         public string CheesySpamA { get; set; }
 		
