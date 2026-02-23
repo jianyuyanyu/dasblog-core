@@ -331,18 +331,8 @@ namespace DasBlog.Web.Models.AdminViewModels
 		public string EditPassword { get; set; }
 		public string ProfilesDir { get; set; }
 		public string BinariesDirRelative { get; set; }
-		public bool EnablePop3 { get; set; }
-		public string Pop3Server { get; set; }
-		public string Pop3Username { get; set; }
-		public string Pop3Password { get; set; }
-		public string Pop3SubjectPrefix { get; set; }
-		public int Pop3Interval { get; set; }
-		public bool Pop3InlineAttachedPictures { get; set; }
-		public int Pop3InlinedAttachedPicturesThumbHeight { get; set; }
 		public bool ApplyContentFiltersToWeb { get; set; }
 		public bool ApplyContentFiltersToRSS { get; set; }
-		public bool Pop3DeleteAllMessages { get; set; }
-		public bool Pop3LogIgnoredEmails { get; set; }
 		public bool EnableReferralUrlBlackList { get; set; }
 		public string ReferralUrlBlackList { get; set; }
 		public string[] ReferralUrlBlackListArray { get; set; }

@@ -60,22 +60,12 @@ namespace DasBlog.Tests.UnitTests
 		public string ProfilesDir { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public string BinariesDirRelative { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public string SmtpServer { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-		public bool EnablePop3 { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-		public string Pop3Server { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-		public string Pop3Username { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-		public string Pop3Password { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-		public string Pop3SubjectPrefix { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-		public int Pop3Interval { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-		public bool Pop3InlineAttachedPictures { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-		public int Pop3InlinedAttachedPicturesThumbHeight { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public bool ApplyContentFiltersToWeb { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public bool ApplyContentFiltersToRSS { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public ContentFilterCollection ContentFilters { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public ContentFilter[] ContentFilterArray { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public CrosspostSiteCollection CrosspostSites { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public CrosspostSite[] CrosspostSiteArray { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-		public bool Pop3DeleteAllMessages { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-		public bool Pop3LogIgnoredEmails { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public bool EnableReferralUrlBlackList { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public string ReferralUrlBlackList { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public string[] ReferralUrlBlackListArray { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }

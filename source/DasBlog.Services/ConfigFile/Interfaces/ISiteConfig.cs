@@ -152,22 +152,6 @@ namespace DasBlog.Services.ConfigFile.Interfaces
 
         string SmtpServer { get; set; }
 
-        bool EnablePop3 { get; set; }
-
-        string Pop3Server { get; set; }
-
-        string Pop3Username { get; set; }
-
-        string Pop3Password { get; set; }
-
-        string Pop3SubjectPrefix { get; set; }
-
-        int Pop3Interval { get; set; }
-
-        bool Pop3InlineAttachedPictures { get; set; }
-
-        int Pop3InlinedAttachedPicturesThumbHeight { get; set; }
-
         bool ApplyContentFiltersToWeb { get; set; }
 
         bool ApplyContentFiltersToRSS { get; set; }
@@ -182,10 +166,6 @@ namespace DasBlog.Services.ConfigFile.Interfaces
 
         [XmlArray("CrosspostSites")]
         CrosspostSite[] CrosspostSiteArray { get; set; }
-
-        bool Pop3DeleteAllMessages { get; set; }
-
-        bool Pop3LogIgnoredEmails { get; set; }
 
         bool EnableReferralUrlBlackList { get; set; }
 
