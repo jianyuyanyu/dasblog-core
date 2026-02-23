@@ -317,17 +317,7 @@ namespace DasBlog.Web.Models.AdminViewModels
 		public bool ObfuscateEmail { get; set; }
 		public bool SendPostsByEmail { get; set; }
 		public bool EnableCommentApi { get; set; }
-		public bool EnableConfigEditService { get; set; }
-		public bool EnableEditService { get; set; }
 		public bool EnableAutoPingback { get; set; }
-		public bool EnableTrackbackService { get; set; }
-		public bool EnablePingbackService { get; set; }
-		public bool EnableBlogrollDescription { get; set; }
-		public bool EnableUrlRewriting { get; set; }
-		public bool EnableCrossposts { get; set; }
-		public bool UseUserCulture { get; set; }
-		public bool EnableClickThrough { get; set; }
-		public bool EnableAggregatorBugging { get; set; }
 		public string EditPassword { get; set; }
 		public string ProfilesDir { get; set; }
 		public string BinariesDirRelative { get; set; }

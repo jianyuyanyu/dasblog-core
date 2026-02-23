@@ -106,33 +106,13 @@ namespace DasBlog.Services.ConfigFile.Interfaces
 
         bool EnableCommentApi { get; set; }
 
-        bool EnableConfigEditService { get; set; }
+		bool EnableAutoPingback { get; set; }
 
-        bool EnableEditService { get; set; }
+		bool ShowCommentCount { get; set; }
 
-        bool EnableAutoPingback { get; set; }
-
-        bool ShowCommentCount { get; set; }
-
-        bool EnableTrackbackService { get; set; }
-
-        bool EnablePingbackService { get; set; }
-
-        bool EnableStartPageCaching { get; set; }
-
-        bool EnableBlogrollDescription { get; set; }
-
-        bool EnableUrlRewriting { get; set; }
-
-        bool EnableCrossposts { get; set; }
-
-        bool UseUserCulture { get; set; }
+		bool EnableStartPageCaching { get; set; }
 
 		bool ShowItemSummaryInAggregatedViews { get; set; }
-
-		bool EnableClickThrough { get; set; }
-
-        bool EnableAggregatorBugging { get; set; }
 
         int DisplayTimeZoneIndex { get; set; }
 

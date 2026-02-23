@@ -102,24 +102,14 @@ namespace DasBlog.Services.ConfigFile
         public bool EnableComments { get; set; }
         public bool AllowMarkdownInComments {get; set;}
         public bool EnableCommentApi { get; set; }
-        public bool EnableConfigEditService { get; set; }
-        public bool EnableEditService { get; set; }
         public bool EnableAutoPingback { get; set; }
         public bool ShowCommentCount { get; set; }
-        public bool EnableTrackbackService { get; set; }
-        public bool EnablePingbackService { get; set; }
         public bool EnableStartPageCaching { get; set; }
 		public bool EnableRewritingHashtagsToCategoryLinks { get; set; }
 		public bool EnableRewritingBareLinksToEmbeddings { get; set; }
 		public bool EnableRewritingBareLinksToIcons { get; set; }
 
-		public bool EnableBlogrollDescription { get; set; }
-        public bool EnableUrlRewriting { get; set; }
-        public bool EnableCrossposts { get; set; }
-        public bool UseUserCulture { get; set; }
-        public bool EnableClickThrough { get; set; }
-        public bool EnableAggregatorBugging { get; set; }
-        public int DisplayTimeZoneIndex { get; set; }
+		public int DisplayTimeZoneIndex { get; set; }
         public bool AdjustDisplayTimeZone { get; set; }
         public string EditPassword { get; set; }
         public string ContentDir { get; set; }

@@ -38,19 +38,9 @@ namespace DasBlog.Tests.UnitTests
 		public string TinyMCEApiKey { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public bool EnableComments { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public bool EnableCommentApi { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-		public bool EnableConfigEditService { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-		public bool EnableEditService { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public bool EnableAutoPingback { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-		public bool EnableTrackbackService { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-		public bool EnablePingbackService { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public bool EnableStartPageCaching { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-		public bool EnableBlogrollDescription { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-		public bool EnableUrlRewriting { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-		public bool EnableCrossposts { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-		public bool UseUserCulture { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public bool ShowItemDescriptionInAggregatedViews { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-		public bool EnableClickThrough { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-		public bool EnableAggregatorBugging { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public int DisplayTimeZoneIndex { get => 4; set => throw new NotImplementedException(); }
 		public bool AdjustDisplayTimeZone { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public string EditPassword { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
