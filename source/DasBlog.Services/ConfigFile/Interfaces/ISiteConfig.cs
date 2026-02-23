@@ -129,12 +129,6 @@ namespace DasBlog.Services.ConfigFile.Interfaces
         [XmlIgnore]
         CrosspostSiteCollection CrosspostSites { get; set; }
 
-        bool EnableReferralUrlBlackList { get; set; }
-
-        string ReferralUrlBlackList { get; set; }
-
-        string[] ReferralUrlBlackListArray { get; set; }
-
         bool EnableCaptcha { get; set; }
 
         string RecaptchaSiteKey { get; set; }
@@ -142,10 +136,6 @@ namespace DasBlog.Services.ConfigFile.Interfaces
         string RecaptchaSecretKey { get; set; } 
 
         double RecaptchaMinimumScore { get; set; }
-
-        bool EnableReferralUrlBlackList404s { get; set; }
-
-        bool EnableMovableTypeBlackList { get; set; }
 
         string ChannelImageUrl { get; set; }
 

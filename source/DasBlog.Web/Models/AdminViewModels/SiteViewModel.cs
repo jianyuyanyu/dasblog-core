@@ -318,11 +318,6 @@ namespace DasBlog.Web.Models.AdminViewModels
 		public bool EnableAutoPingback { get; set; }
 		public string ProfilesDir { get; set; }
 		public string BinariesDirRelative { get; set; }
-		public bool EnableReferralUrlBlackList { get; set; }
-		public string ReferralUrlBlackList { get; set; }
-		public string[] ReferralUrlBlackListArray { get; set; }
-        public bool EnableReferralUrlBlackList404s { get; set; }
-		public bool EnableMovableTypeBlackList { get; set; }
 		public bool EnableCrossPostFooter { get; set; }
 		public string CrossPostFooter { get; set; }
 		public bool EnableTitlePermaLink { get; set; }
@@ -336,7 +331,7 @@ namespace DasBlog.Web.Models.AdminViewModels
 		public string CommentsGravatarBorder { get; set; }
 		public string CommentsGravatarRating { get; set; }
 		public bool CommentsAllowHtml { get; set; }
-		//public ISpamBlockingService SpamBlockingService { get; set; }
+
 		public bool EnableSpamModeration { get; set; }
 		public bool EnableDailyReportEmail { get; set; }
 		public bool EnableGeoRss { get; set; }

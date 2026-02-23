@@ -116,15 +116,10 @@ namespace DasBlog.Services.ConfigFile
         public string BinariesDirRelative { get; set; }
         public string SmtpServer { get; set; }
         public CrosspostSiteCollection CrosspostSites { get; set; }
-        public bool EnableReferralUrlBlackList { get; set; }
-        public string ReferralUrlBlackList { get; set; }
-        public string[] ReferralUrlBlackListArray { get; set; }
         public bool EnableCaptcha { get; set; }
         public string RecaptchaSiteKey { get; set; }
         public string RecaptchaSecretKey { get; set; } 
         public double RecaptchaMinimumScore {get; set; }
-        public bool EnableReferralUrlBlackList404s { get; set; }
-        public bool EnableMovableTypeBlackList { get; set; }
         public string ChannelImageUrl { get; set; }
         public bool EnableCrossPostFooter { get; set; }
         public string CrossPostFooter { get; set; }
