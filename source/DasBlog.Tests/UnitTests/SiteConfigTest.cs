@@ -61,7 +61,6 @@ namespace DasBlog.Tests.UnitTests
 		public string BinariesDirRelative { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public string SmtpServer { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public CrosspostSiteCollection CrosspostSites { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-		public CrosspostSite[] CrosspostSiteArray { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public bool EnableReferralUrlBlackList { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public string ReferralUrlBlackList { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public string[] ReferralUrlBlackListArray { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
@@ -85,7 +84,6 @@ namespace DasBlog.Tests.UnitTests
 		public string RssLanguage { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public bool EnableSearchHighlight { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public bool EnableEntryReferrals { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-		public PingService[] PingServiceArray { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public PingServiceCollection PingServices { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public string FeedBurnerName { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public int DaysCommentsAllowed { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }

@@ -155,9 +155,6 @@ namespace DasBlog.Services.ConfigFile.Interfaces
         [XmlIgnore]
         CrosspostSiteCollection CrosspostSites { get; set; }
 
-        [XmlArray("CrosspostSites")]
-        CrosspostSite[] CrosspostSiteArray { get; set; }
-
         bool EnableReferralUrlBlackList { get; set; }
 
         string ReferralUrlBlackList { get; set; }
@@ -239,9 +236,6 @@ namespace DasBlog.Services.ConfigFile.Interfaces
 
 		[XmlIgnore]
 		PingServiceCollection PingServices { get; set; }
-
-		[XmlArray("PingServices", IsNullable = true)]
-		PingService[] PingServiceArray { get; set; }
 
 		ValidCommentTags [] ValidCommentTags { get; set; }
 

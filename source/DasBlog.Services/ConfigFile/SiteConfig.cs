@@ -129,7 +129,6 @@ namespace DasBlog.Services.ConfigFile
         public string BinariesDirRelative { get; set; }
         public string SmtpServer { get; set; }
         public CrosspostSiteCollection CrosspostSites { get; set; }
-        public CrosspostSite[] CrosspostSiteArray { get; set; }
         public bool EnableReferralUrlBlackList { get; set; }
         public string ReferralUrlBlackList { get; set; }
         public string[] ReferralUrlBlackListArray { get; set; }
@@ -153,7 +152,6 @@ namespace DasBlog.Services.ConfigFile
         public string RssLanguage { get; set; }
         public bool EnableSearchHighlight { get; set; }
         public bool EnableEntryReferrals { get; set; }
-        public PingService[] PingServiceArray { get; set; }
         public PingServiceCollection PingServices { get; set; }
         public string FeedBurnerName { get; set; }
         public int DaysCommentsAllowed { get; set; }
