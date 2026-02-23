@@ -315,46 +315,23 @@ namespace DasBlog.Web.Models.AdminViewModels
 
 		public bool EntryTitleAsLink { get; set; }
 		public bool ObfuscateEmail { get; set; }
-		public bool SendPostsByEmail { get; set; }
-		public bool EnableCommentApi { get; set; }
-		public bool EnableConfigEditService { get; set; }
-		public bool EnableEditService { get; set; }
 		public bool EnableAutoPingback { get; set; }
-		public bool EnableTrackbackService { get; set; }
-		public bool EnablePingbackService { get; set; }
-		public bool EnableBlogrollDescription { get; set; }
-		public bool EnableUrlRewriting { get; set; }
-		public bool EnableCrossposts { get; set; }
-		public bool UseUserCulture { get; set; }
-		public bool EnableClickThrough { get; set; }
-		public bool EnableAggregatorBugging { get; set; }
-		public string EditPassword { get; set; }
 		public string ProfilesDir { get; set; }
 		public string BinariesDirRelative { get; set; }
-		public bool EnableReferralUrlBlackList { get; set; }
-		public string ReferralUrlBlackList { get; set; }
-		public string[] ReferralUrlBlackListArray { get; set; }
-        public bool EnableReferralUrlBlackList404s { get; set; }
-		public bool EnableMovableTypeBlackList { get; set; }
 		public bool EnableCrossPostFooter { get; set; }
 		public string CrossPostFooter { get; set; }
 		public bool EnableTitlePermaLink { get; set; }
 		public bool EnableTitlePermaLinkSpaces { get; set; }
-		public bool EncryptLoginPassword { get; set; }
 		public string RssLanguage { get; set; }
 		public bool EnableSearchHighlight { get; set; }
-		public bool EnableEntryReferrals { get; set; }
-		public string FeedBurnerName { get; set; }
 		public bool LogBlockedReferrals { get; set; }
-		public bool UseFeedSchemeForSyndication { get; set; }
-		public bool EnableAutoSave { get; set; }
 		public bool CommentsAllowGravatar { get; set; }
 		public string CommentsGravatarNoImgPath { get; set; }
 		public string CommentsGravatarSize { get; set; }
 		public string CommentsGravatarBorder { get; set; }
 		public string CommentsGravatarRating { get; set; }
 		public bool CommentsAllowHtml { get; set; }
-		//public ISpamBlockingService SpamBlockingService { get; set; }
+
 		public bool EnableSpamModeration { get; set; }
 		public bool EnableDailyReportEmail { get; set; }
 		public bool EnableGeoRss { get; set; }
@@ -362,7 +339,6 @@ namespace DasBlog.Web.Models.AdminViewModels
 		public double DefaultLongitude { get; set; }
 		public bool EnableDefaultLatLongForNonGeoCodedPosts { get; set; }
 		public bool HtmlTidyContent { get; set; }
-		public string RSSEndPointRewrite { get; set; }
 		public bool CategoryAllEntries { get; set; }
 				public string AllowedHosts { get; set; }
 

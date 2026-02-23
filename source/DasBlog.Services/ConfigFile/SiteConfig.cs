@@ -96,32 +96,19 @@ namespace DasBlog.Services.ConfigFile
         public bool ObfuscateEmail { get; set; }
         public string NotificationEMailAddress { get; set; }
         public bool SendCommentsByEmail { get; set; }
-        public bool SendPostsByEmail { get; set; }
         public string TinyMCEApiKey { get; set; }
         public bool EnableBloggerApi { get; set; }
         public bool EnableComments { get; set; }
         public bool AllowMarkdownInComments {get; set;}
-        public bool EnableCommentApi { get; set; }
-        public bool EnableConfigEditService { get; set; }
-        public bool EnableEditService { get; set; }
         public bool EnableAutoPingback { get; set; }
         public bool ShowCommentCount { get; set; }
-        public bool EnableTrackbackService { get; set; }
-        public bool EnablePingbackService { get; set; }
         public bool EnableStartPageCaching { get; set; }
 		public bool EnableRewritingHashtagsToCategoryLinks { get; set; }
 		public bool EnableRewritingBareLinksToEmbeddings { get; set; }
 		public bool EnableRewritingBareLinksToIcons { get; set; }
 
-		public bool EnableBlogrollDescription { get; set; }
-        public bool EnableUrlRewriting { get; set; }
-        public bool EnableCrossposts { get; set; }
-        public bool UseUserCulture { get; set; }
-        public bool EnableClickThrough { get; set; }
-        public bool EnableAggregatorBugging { get; set; }
-        public int DisplayTimeZoneIndex { get; set; }
+		public int DisplayTimeZoneIndex { get; set; }
         public bool AdjustDisplayTimeZone { get; set; }
-        public string EditPassword { get; set; }
         public string ContentDir { get; set; }
         public string LogDir { get; set; }
         public string BinariesDir { get; set; }
@@ -129,39 +116,29 @@ namespace DasBlog.Services.ConfigFile
         public string BinariesDirRelative { get; set; }
         public string SmtpServer { get; set; }
         public CrosspostSiteCollection CrosspostSites { get; set; }
-        public bool EnableReferralUrlBlackList { get; set; }
-        public string ReferralUrlBlackList { get; set; }
-        public string[] ReferralUrlBlackListArray { get; set; }
         public bool EnableCaptcha { get; set; }
         public string RecaptchaSiteKey { get; set; }
         public string RecaptchaSecretKey { get; set; } 
         public double RecaptchaMinimumScore {get; set; }
-        public bool EnableReferralUrlBlackList404s { get; set; }
-        public bool EnableMovableTypeBlackList { get; set; }
         public string ChannelImageUrl { get; set; }
         public bool EnableCrossPostFooter { get; set; }
         public string CrossPostFooter { get; set; }
         public bool EnableTitlePermaLink { get; set; }
         public bool EnableTitlePermaLinkUnique { get; set; }
         public bool EnableTitlePermaLinkSpaces { get; set; }
-        public bool EncryptLoginPassword { get; set; }
         public bool EnableSmtpAuthentication { get; set; }
         public string SmtpUserName { get; set; }
         public string SmtpFromEmail { get; set; }
         public string SmtpPassword { get; set; }
         public string RssLanguage { get; set; }
         public bool EnableSearchHighlight { get; set; }
-        public bool EnableEntryReferrals { get; set; }
         public PingServiceCollection PingServices { get; set; }
-        public string FeedBurnerName { get; set; }
         public int DaysCommentsAllowed { get; set; }
         public bool EnableCommentDays { get; set; }
         public string EntryEditControl { get; set; }
         public bool LogBlockedReferrals { get; set; }
         public bool ShowCommentsWhenViewingEntry { get; set; }
-        public bool UseFeedSchemeForSyndication { get; set; }
         public int ContentLookaheadDays { get; set; }
-        public bool EnableAutoSave { get; set; }
         public int SmtpPort { get; set; }
         public bool CommentsAllowGravatar { get; set; }
         public string CommentsGravatarNoImgPath { get; set; }
@@ -184,7 +161,6 @@ namespace DasBlog.Services.ConfigFile
         public bool EnableDefaultLatLongForNonGeoCodedPosts { get; set; }
         public bool HtmlTidyContent { get; set; }
         public string TitlePermalinkSpaceReplacement { get; set; }
-        public string RSSEndPointRewrite { get; set; }
         public string CheesySpamQ { get; set; }
         public string CheesySpamA { get; set; }
 		

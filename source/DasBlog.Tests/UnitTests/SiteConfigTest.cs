@@ -33,27 +33,14 @@ namespace DasBlog.Tests.UnitTests
 		public bool ObfuscateEmail { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public string NotificationEMailAddress { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public bool SendCommentsByEmail { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-		public bool SendPostsByEmail { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public bool EnableBloggerApi { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public string TinyMCEApiKey { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public bool EnableComments { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-		public bool EnableCommentApi { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-		public bool EnableConfigEditService { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-		public bool EnableEditService { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public bool EnableAutoPingback { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-		public bool EnableTrackbackService { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-		public bool EnablePingbackService { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public bool EnableStartPageCaching { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-		public bool EnableBlogrollDescription { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-		public bool EnableUrlRewriting { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-		public bool EnableCrossposts { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-		public bool UseUserCulture { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public bool ShowItemDescriptionInAggregatedViews { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-		public bool EnableClickThrough { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-		public bool EnableAggregatorBugging { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public int DisplayTimeZoneIndex { get => 4; set => throw new NotImplementedException(); }
 		public bool AdjustDisplayTimeZone { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-		public string EditPassword { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public string ContentDir { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public string LogDir { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public string BinariesDir { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
@@ -61,39 +48,29 @@ namespace DasBlog.Tests.UnitTests
 		public string BinariesDirRelative { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public string SmtpServer { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public CrosspostSiteCollection CrosspostSites { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-		public bool EnableReferralUrlBlackList { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-		public string ReferralUrlBlackList { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-		public string[] ReferralUrlBlackListArray { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public bool EnableCaptcha { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public string RecaptchaSiteKey { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public string RecaptchaSecretKey { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public double RecaptchaMinimumScore { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-		public bool EnableReferralUrlBlackList404s { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-		public bool EnableMovableTypeBlackList { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+		public string RecaptchaSiteKey { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+		public string RecaptchaSecretKey { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+		public double RecaptchaMinimumScore { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public string ChannelImageUrl { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public bool EnableCrossPostFooter { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public string CrossPostFooter { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public bool EnableTitlePermaLink { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public bool EnableTitlePermaLinkUnique { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public bool EnableTitlePermaLinkSpaces { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-		public bool EncryptLoginPassword { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public bool EnableSmtpAuthentication { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public string SmtpUserName { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public string SmtpPassword { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public string SmtpFromEmail { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public string RssLanguage { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public bool EnableSearchHighlight { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-		public bool EnableEntryReferrals { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public PingServiceCollection PingServices { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-		public string FeedBurnerName { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public int DaysCommentsAllowed { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public bool EnableCommentDays { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public string EntryEditControl { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public bool LogBlockedReferrals { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public bool ShowCommentsWhenViewingEntry { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-		public bool UseFeedSchemeForSyndication { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public int ContentLookaheadDays { get => 2; set => throw new NotImplementedException(); }
-		public bool EnableAutoSave { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public int SmtpPort { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public bool CommentsAllowGravatar { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public string CommentsGravatarNoImgPath { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
@@ -115,7 +92,6 @@ namespace DasBlog.Tests.UnitTests
 		public bool EnableDefaultLatLongForNonGeoCodedPosts { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public bool HtmlTidyContent { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public string TitlePermalinkSpaceReplacement { get => "-"; set => throw new NotImplementedException(); }
-		public string RSSEndPointRewrite { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public string CheesySpamQ { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public string CheesySpamA { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public XmlElement[] anyElements { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }

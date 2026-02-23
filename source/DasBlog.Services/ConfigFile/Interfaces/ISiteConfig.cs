@@ -94,51 +94,25 @@ namespace DasBlog.Services.ConfigFile.Interfaces
 
         bool SendCommentsByEmail { get; set; }
 
-        bool SendPostsByEmail { get; set; }
-
         string TinyMCEApiKey { get; set; }
         
         bool EnableBloggerApi { get; set; }
 
         bool EnableComments { get; set; }
 
-        bool AllowMarkdownInComments {get; set;}
+		bool AllowMarkdownInComments {get; set;}
 
-        bool EnableCommentApi { get; set; }
+		bool EnableAutoPingback { get; set; }
 
-        bool EnableConfigEditService { get; set; }
+		bool ShowCommentCount { get; set; }
 
-        bool EnableEditService { get; set; }
-
-        bool EnableAutoPingback { get; set; }
-
-        bool ShowCommentCount { get; set; }
-
-        bool EnableTrackbackService { get; set; }
-
-        bool EnablePingbackService { get; set; }
-
-        bool EnableStartPageCaching { get; set; }
-
-        bool EnableBlogrollDescription { get; set; }
-
-        bool EnableUrlRewriting { get; set; }
-
-        bool EnableCrossposts { get; set; }
-
-        bool UseUserCulture { get; set; }
+		bool EnableStartPageCaching { get; set; }
 
 		bool ShowItemSummaryInAggregatedViews { get; set; }
-
-		bool EnableClickThrough { get; set; }
-
-        bool EnableAggregatorBugging { get; set; }
 
         int DisplayTimeZoneIndex { get; set; }
 
         bool AdjustDisplayTimeZone { get; set; }
-
-        string EditPassword { get; set; }
 
         string ContentDir { get; set; }
 
@@ -155,12 +129,6 @@ namespace DasBlog.Services.ConfigFile.Interfaces
         [XmlIgnore]
         CrosspostSiteCollection CrosspostSites { get; set; }
 
-        bool EnableReferralUrlBlackList { get; set; }
-
-        string ReferralUrlBlackList { get; set; }
-
-        string[] ReferralUrlBlackListArray { get; set; }
-
         bool EnableCaptcha { get; set; }
 
         string RecaptchaSiteKey { get; set; }
@@ -168,10 +136,6 @@ namespace DasBlog.Services.ConfigFile.Interfaces
         string RecaptchaSecretKey { get; set; } 
 
         double RecaptchaMinimumScore { get; set; }
-
-        bool EnableReferralUrlBlackList404s { get; set; }
-
-        bool EnableMovableTypeBlackList { get; set; }
 
         string ChannelImageUrl { get; set; }
 
@@ -185,8 +149,6 @@ namespace DasBlog.Services.ConfigFile.Interfaces
 
         bool EnableTitlePermaLinkSpaces { get; set; }
 
-        bool EncryptLoginPassword { get; set; }
-
         bool EnableSmtpAuthentication { get; set; }
 
         string SmtpUserName { get; set; }
@@ -198,10 +160,6 @@ namespace DasBlog.Services.ConfigFile.Interfaces
 
         bool EnableSearchHighlight { get; set; }
 
-        bool EnableEntryReferrals { get; set; }
-
-        string FeedBurnerName { get; set; }
-
         int DaysCommentsAllowed { get; set; }
 
         bool EnableCommentDays { get; set; }
@@ -212,11 +170,7 @@ namespace DasBlog.Services.ConfigFile.Interfaces
 
         bool ShowCommentsWhenViewingEntry { get; set; }
 
-        bool UseFeedSchemeForSyndication { get; set; }
-
         int ContentLookaheadDays { get; set; }
-
-        bool EnableAutoSave { get; set; }
 
         int SmtpPort { get; set; }
 
@@ -263,8 +217,6 @@ namespace DasBlog.Services.ConfigFile.Interfaces
         bool HtmlTidyContent { get; set; }
 
         string TitlePermalinkSpaceReplacement { get; set; }
-
-        string RSSEndPointRewrite { get; set; }
 
         string CheesySpamQ { get; set; }
 
