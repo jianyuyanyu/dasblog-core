@@ -94,12 +94,6 @@ namespace DasBlog.Services.ConfigFile.Interfaces
 
         bool SendCommentsByEmail { get; set; }
 
-        bool SendReferralsByEmail { get; set; }
-
-        bool SendTrackbacksByEmail { get; set; }
-
-        bool SendPingbacksByEmail { get; set; }
-
         bool SendPostsByEmail { get; set; }
 
         string TinyMCEApiKey { get; set; }
@@ -229,8 +223,6 @@ namespace DasBlog.Services.ConfigFile.Interfaces
 
         string CrossPostFooter { get; set; }
 
-        bool ExtensionlessUrls { get; set; }
-
         bool EnableTitlePermaLink { get; set; }
 
         bool EnableTitlePermaLinkUnique { get; set; }
@@ -257,8 +249,6 @@ namespace DasBlog.Services.ConfigFile.Interfaces
         int DaysCommentsAllowed { get; set; }
 
         bool EnableCommentDays { get; set; }
-
-        bool SupressEmailAddressDisplay { get; set; }
 
         string EntryEditControl { get; set; }
 
@@ -315,10 +305,6 @@ namespace DasBlog.Services.ConfigFile.Interfaces
 
         string PreferredBloggingAPI { get; set; }
 
-        bool EnableGoogleMaps { get; set; }
-
-        string GoogleMapsApiKey { get; set; }
-
         bool EnableGeoRss { get; set; }
 
         double DefaultLatitude { get; set; }
@@ -329,17 +315,7 @@ namespace DasBlog.Services.ConfigFile.Interfaces
 
         bool HtmlTidyContent { get; set; }
 
-        bool ResolveCommenterIP { get; set; }
-
-        bool AllowOpenIdComments { get; set; }
-
-        bool AllowOpenIdAdmin { get; set; }
-
-        bool BypassSpamOpenIdComment { get; set; }
-
         string TitlePermalinkSpaceReplacement { get; set; }
-
-        bool AMPPagesEnabled { get; set; }
 
         string RSSEndPointRewrite { get; set; }
 

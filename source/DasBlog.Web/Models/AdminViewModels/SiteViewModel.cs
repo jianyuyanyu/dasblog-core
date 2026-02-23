@@ -315,9 +315,6 @@ namespace DasBlog.Web.Models.AdminViewModels
 
 		public bool EntryTitleAsLink { get; set; }
 		public bool ObfuscateEmail { get; set; }
-		public bool SendReferralsByEmail { get; set; }
-		public bool SendTrackbacksByEmail { get; set; }
-		public bool SendPingbacksByEmail { get; set; }
 		public bool SendPostsByEmail { get; set; }
 		public bool EnableCommentApi { get; set; }
 		public bool EnableConfigEditService { get; set; }
@@ -359,7 +356,6 @@ namespace DasBlog.Web.Models.AdminViewModels
 		public bool EnableMovableTypeBlackList { get; set; }
 		public bool EnableCrossPostFooter { get; set; }
 		public string CrossPostFooter { get; set; }
-		public bool ExtensionlessUrls { get; set; }
 		public bool EnableTitlePermaLink { get; set; }
 		public bool EnableTitlePermaLinkSpaces { get; set; }
 		public bool EncryptLoginPassword { get; set; }
@@ -367,7 +363,6 @@ namespace DasBlog.Web.Models.AdminViewModels
 		public bool EnableSearchHighlight { get; set; }
 		public bool EnableEntryReferrals { get; set; }
 		public string FeedBurnerName { get; set; }
-		public bool SupressEmailAddressDisplay { get; set; }
 		public bool LogBlockedReferrals { get; set; }
 		public bool UseFeedSchemeForSyndication { get; set; }
 		public bool EnableAutoSave { get; set; }
@@ -383,18 +378,11 @@ namespace DasBlog.Web.Models.AdminViewModels
 		//public ISpamBlockingService SpamBlockingService { get; set; }
 		public bool EnableSpamModeration { get; set; }
 		public bool EnableDailyReportEmail { get; set; }
-		public bool EnableGoogleMaps { get; set; }
-		public string GoogleMapsApiKey { get; set; }
 		public bool EnableGeoRss { get; set; }
 		public double DefaultLatitude { get; set; }
 		public double DefaultLongitude { get; set; }
 		public bool EnableDefaultLatLongForNonGeoCodedPosts { get; set; }
 		public bool HtmlTidyContent { get; set; }
-		public bool ResolveCommenterIP { get; set; }
-		public bool AllowOpenIdComments { get; set; }
-		public bool AllowOpenIdAdmin { get; set; }
-		public bool BypassSpamOpenIdComment { get; set; }
-		public bool AMPPagesEnabled { get; set; }
 		public string RSSEndPointRewrite { get; set; }
 		public bool CategoryAllEntries { get; set; }
 				public string AllowedHosts { get; set; }

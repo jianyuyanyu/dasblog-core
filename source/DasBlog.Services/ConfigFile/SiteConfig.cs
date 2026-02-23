@@ -96,9 +96,6 @@ namespace DasBlog.Services.ConfigFile
         public bool ObfuscateEmail { get; set; }
         public string NotificationEMailAddress { get; set; }
         public bool SendCommentsByEmail { get; set; }
-        public bool SendReferralsByEmail { get; set; }
-        public bool SendTrackbacksByEmail { get; set; }
-        public bool SendPingbacksByEmail { get; set; }
         public bool SendPostsByEmail { get; set; }
         public string TinyMCEApiKey { get; set; }
         public bool EnableBloggerApi { get; set; }
@@ -165,7 +162,6 @@ namespace DasBlog.Services.ConfigFile
         public string ChannelImageUrl { get; set; }
         public bool EnableCrossPostFooter { get; set; }
         public string CrossPostFooter { get; set; }
-        public bool ExtensionlessUrls { get; set; }
         public bool EnableTitlePermaLink { get; set; }
         public bool EnableTitlePermaLinkUnique { get; set; }
         public bool EnableTitlePermaLinkSpaces { get; set; }
@@ -182,7 +178,6 @@ namespace DasBlog.Services.ConfigFile
         public string FeedBurnerName { get; set; }
         public int DaysCommentsAllowed { get; set; }
         public bool EnableCommentDays { get; set; }
-        public bool SupressEmailAddressDisplay { get; set; }
         public string EntryEditControl { get; set; }
         public bool LogBlockedReferrals { get; set; }
         public bool ShowCommentsWhenViewingEntry { get; set; }
@@ -209,19 +204,12 @@ namespace DasBlog.Services.ConfigFile
         public bool EnableDailyReportEmail { get; set; }
         public bool UseSSLForSMTP { get; set; }
         public string PreferredBloggingAPI { get; set; }
-        public bool EnableGoogleMaps { get; set; }
-        public string GoogleMapsApiKey { get; set; }
         public bool EnableGeoRss { get; set; }
         public double DefaultLatitude { get; set; }
         public double DefaultLongitude { get; set; }
         public bool EnableDefaultLatLongForNonGeoCodedPosts { get; set; }
         public bool HtmlTidyContent { get; set; }
-        public bool ResolveCommenterIP { get; set; }
-        public bool AllowOpenIdComments { get; set; }
-        public bool AllowOpenIdAdmin { get; set; }
-        public bool BypassSpamOpenIdComment { get; set; }
         public string TitlePermalinkSpaceReplacement { get; set; }
-        public bool AMPPagesEnabled { get; set; }
         public string RSSEndPointRewrite { get; set; }
         public string CheesySpamQ { get; set; }
         public string CheesySpamA { get; set; }
