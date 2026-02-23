@@ -33,11 +33,9 @@ namespace DasBlog.Tests.UnitTests
 		public bool ObfuscateEmail { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public string NotificationEMailAddress { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public bool SendCommentsByEmail { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-		public bool SendPostsByEmail { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public bool EnableBloggerApi { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public string TinyMCEApiKey { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public bool EnableComments { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-		public bool EnableCommentApi { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public bool EnableAutoPingback { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public bool EnableStartPageCaching { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public bool ShowItemDescriptionInAggregatedViews { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
@@ -66,24 +64,19 @@ namespace DasBlog.Tests.UnitTests
 		public bool EnableTitlePermaLink { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public bool EnableTitlePermaLinkUnique { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public bool EnableTitlePermaLinkSpaces { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-		public bool EncryptLoginPassword { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public bool EnableSmtpAuthentication { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public string SmtpUserName { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public string SmtpPassword { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public string SmtpFromEmail { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public string RssLanguage { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public bool EnableSearchHighlight { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-		public bool EnableEntryReferrals { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public PingServiceCollection PingServices { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-		public string FeedBurnerName { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public int DaysCommentsAllowed { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public bool EnableCommentDays { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public string EntryEditControl { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public bool LogBlockedReferrals { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public bool ShowCommentsWhenViewingEntry { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-		public bool UseFeedSchemeForSyndication { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public int ContentLookaheadDays { get => 2; set => throw new NotImplementedException(); }
-		public bool EnableAutoSave { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public int SmtpPort { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public bool CommentsAllowGravatar { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public string CommentsGravatarNoImgPath { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }

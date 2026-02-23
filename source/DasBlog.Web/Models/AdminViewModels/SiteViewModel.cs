@@ -315,8 +315,6 @@ namespace DasBlog.Web.Models.AdminViewModels
 
 		public bool EntryTitleAsLink { get; set; }
 		public bool ObfuscateEmail { get; set; }
-		public bool SendPostsByEmail { get; set; }
-		public bool EnableCommentApi { get; set; }
 		public bool EnableAutoPingback { get; set; }
 		public string EditPassword { get; set; }
 		public string ProfilesDir { get; set; }
@@ -330,14 +328,9 @@ namespace DasBlog.Web.Models.AdminViewModels
 		public string CrossPostFooter { get; set; }
 		public bool EnableTitlePermaLink { get; set; }
 		public bool EnableTitlePermaLinkSpaces { get; set; }
-		public bool EncryptLoginPassword { get; set; }
 		public string RssLanguage { get; set; }
 		public bool EnableSearchHighlight { get; set; }
-		public bool EnableEntryReferrals { get; set; }
-		public string FeedBurnerName { get; set; }
 		public bool LogBlockedReferrals { get; set; }
-		public bool UseFeedSchemeForSyndication { get; set; }
-		public bool EnableAutoSave { get; set; }
 		public bool CommentsAllowGravatar { get; set; }
 		public string CommentsGravatarNoImgPath { get; set; }
 		public string CommentsGravatarSize { get; set; }

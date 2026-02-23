@@ -96,12 +96,10 @@ namespace DasBlog.Services.ConfigFile
         public bool ObfuscateEmail { get; set; }
         public string NotificationEMailAddress { get; set; }
         public bool SendCommentsByEmail { get; set; }
-        public bool SendPostsByEmail { get; set; }
         public string TinyMCEApiKey { get; set; }
         public bool EnableBloggerApi { get; set; }
         public bool EnableComments { get; set; }
         public bool AllowMarkdownInComments {get; set;}
-        public bool EnableCommentApi { get; set; }
         public bool EnableAutoPingback { get; set; }
         public bool ShowCommentCount { get; set; }
         public bool EnableStartPageCaching { get; set; }
@@ -134,24 +132,19 @@ namespace DasBlog.Services.ConfigFile
         public bool EnableTitlePermaLink { get; set; }
         public bool EnableTitlePermaLinkUnique { get; set; }
         public bool EnableTitlePermaLinkSpaces { get; set; }
-        public bool EncryptLoginPassword { get; set; }
         public bool EnableSmtpAuthentication { get; set; }
         public string SmtpUserName { get; set; }
         public string SmtpFromEmail { get; set; }
         public string SmtpPassword { get; set; }
         public string RssLanguage { get; set; }
         public bool EnableSearchHighlight { get; set; }
-        public bool EnableEntryReferrals { get; set; }
         public PingServiceCollection PingServices { get; set; }
-        public string FeedBurnerName { get; set; }
         public int DaysCommentsAllowed { get; set; }
         public bool EnableCommentDays { get; set; }
         public string EntryEditControl { get; set; }
         public bool LogBlockedReferrals { get; set; }
         public bool ShowCommentsWhenViewingEntry { get; set; }
-        public bool UseFeedSchemeForSyndication { get; set; }
         public int ContentLookaheadDays { get; set; }
-        public bool EnableAutoSave { get; set; }
         public int SmtpPort { get; set; }
         public bool CommentsAllowGravatar { get; set; }
         public string CommentsGravatarNoImgPath { get; set; }

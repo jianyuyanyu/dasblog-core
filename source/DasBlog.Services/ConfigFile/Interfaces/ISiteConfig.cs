@@ -94,17 +94,13 @@ namespace DasBlog.Services.ConfigFile.Interfaces
 
         bool SendCommentsByEmail { get; set; }
 
-        bool SendPostsByEmail { get; set; }
-
         string TinyMCEApiKey { get; set; }
         
         bool EnableBloggerApi { get; set; }
 
         bool EnableComments { get; set; }
 
-        bool AllowMarkdownInComments {get; set;}
-
-        bool EnableCommentApi { get; set; }
+		bool AllowMarkdownInComments {get; set;}
 
 		bool EnableAutoPingback { get; set; }
 
@@ -165,8 +161,6 @@ namespace DasBlog.Services.ConfigFile.Interfaces
 
         bool EnableTitlePermaLinkSpaces { get; set; }
 
-        bool EncryptLoginPassword { get; set; }
-
         bool EnableSmtpAuthentication { get; set; }
 
         string SmtpUserName { get; set; }
@@ -178,10 +172,6 @@ namespace DasBlog.Services.ConfigFile.Interfaces
 
         bool EnableSearchHighlight { get; set; }
 
-        bool EnableEntryReferrals { get; set; }
-
-        string FeedBurnerName { get; set; }
-
         int DaysCommentsAllowed { get; set; }
 
         bool EnableCommentDays { get; set; }
@@ -192,11 +182,7 @@ namespace DasBlog.Services.ConfigFile.Interfaces
 
         bool ShowCommentsWhenViewingEntry { get; set; }
 
-        bool UseFeedSchemeForSyndication { get; set; }
-
         int ContentLookaheadDays { get; set; }
-
-        bool EnableAutoSave { get; set; }
 
         int SmtpPort { get; set; }
 
