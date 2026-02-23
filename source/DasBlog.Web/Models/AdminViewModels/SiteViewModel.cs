@@ -331,8 +331,6 @@ namespace DasBlog.Web.Models.AdminViewModels
 		public string EditPassword { get; set; }
 		public string ProfilesDir { get; set; }
 		public string BinariesDirRelative { get; set; }
-		public bool ApplyContentFiltersToWeb { get; set; }
-		public bool ApplyContentFiltersToRSS { get; set; }
 		public bool EnableReferralUrlBlackList { get; set; }
 		public string ReferralUrlBlackList { get; set; }
 		public string[] ReferralUrlBlackListArray { get; set; }
@@ -356,9 +354,6 @@ namespace DasBlog.Web.Models.AdminViewModels
 		public string CommentsGravatarBorder { get; set; }
 		public string CommentsGravatarRating { get; set; }
 		public bool CommentsAllowHtml { get; set; }
-		public bool EnableCoComment { get; set; }
-		public bool EnableSpamBlockingService { get; set; }
-		public string SpamBlockingServiceApiKey { get; set; }
 		//public ISpamBlockingService SpamBlockingService { get; set; }
 		public bool EnableSpamModeration { get; set; }
 		public bool EnableDailyReportEmail { get; set; }

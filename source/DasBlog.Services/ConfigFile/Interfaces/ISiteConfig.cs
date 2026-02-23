@@ -152,15 +152,6 @@ namespace DasBlog.Services.ConfigFile.Interfaces
 
         string SmtpServer { get; set; }
 
-        bool ApplyContentFiltersToWeb { get; set; }
-
-        bool ApplyContentFiltersToRSS { get; set; }
-
-        [XmlIgnore]
-        ContentFilterCollection ContentFilters { get; set; }
-
-        ContentFilter[] ContentFilterArray { get; set; }
-
         [XmlIgnore]
         CrosspostSiteCollection CrosspostSites { get; set; }
 
@@ -254,16 +245,10 @@ namespace DasBlog.Services.ConfigFile.Interfaces
 
 		ValidCommentTags [] ValidCommentTags { get; set; }
 
-		bool EnableCoComment { get; set; }
+		[XmlIgnore]
+		ISpamBlockingService SpamBlockingService { get; set; }
 
-        bool EnableSpamBlockingService { get; set; }
-
-        string SpamBlockingServiceApiKey { get; set; }
-
-        [XmlIgnore]
-        ISpamBlockingService SpamBlockingService { get; set; }
-
-        bool EnableSpamModeration { get; set; }
+		bool EnableSpamModeration { get; set; }
 
         int EntriesPerPage { get; set; }
 

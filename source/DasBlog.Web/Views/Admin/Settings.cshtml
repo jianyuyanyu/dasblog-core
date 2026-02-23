@@ -221,9 +221,6 @@
 
     @Html.HiddenFor(@m => m.SiteConfig.EnableClickThrough)
 
-    @Html.HiddenFor(@m => m.SiteConfig.ApplyContentFiltersToWeb)
-    @Html.HiddenFor(@m => m.SiteConfig.ApplyContentFiltersToRSS)
-
     @Html.HiddenFor(@m => m.SiteConfig.EnableReferralUrlBlackList)
 
     @Html.HiddenFor(@m => m.SiteConfig.ReferralUrlBlackList)
@@ -249,10 +246,7 @@
 
     @Html.HiddenFor(@m => m.SiteConfig.CommentsGravatarBorder)
     @Html.HiddenFor(@m => m.SiteConfig.CommentsGravatarRating)
-    @Html.HiddenFor(@m => m.SiteConfig.EnableCoComment)
 
-    @Html.HiddenFor(@m => m.SiteConfig.EnableSpamBlockingService)
-    @Html.HiddenFor(@m => m.SiteConfig.SpamBlockingServiceApiKey)
     @Html.HiddenFor(@m => m.SiteConfig.EnableSpamModeration)
 
     @Html.HiddenFor(@m => m.SiteConfig.EnableDailyReportEmail)

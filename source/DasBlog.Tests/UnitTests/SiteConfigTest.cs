@@ -60,10 +60,6 @@ namespace DasBlog.Tests.UnitTests
 		public string ProfilesDir { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public string BinariesDirRelative { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public string SmtpServer { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-		public bool ApplyContentFiltersToWeb { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-		public bool ApplyContentFiltersToRSS { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-		public ContentFilterCollection ContentFilters { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-		public ContentFilter[] ContentFilterArray { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public CrosspostSiteCollection CrosspostSites { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public CrosspostSite[] CrosspostSiteArray { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public bool EnableReferralUrlBlackList { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
@@ -109,9 +105,6 @@ namespace DasBlog.Tests.UnitTests
 		public bool CommentsRequireApproval { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public bool CommentsAllowHtml { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public string XmlAllowedTags { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-		public bool EnableCoComment { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-		public bool EnableSpamBlockingService { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-		public string SpamBlockingServiceApiKey { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public ISpamBlockingService SpamBlockingService { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public bool EnableSpamModeration { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public int EntriesPerPage { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }

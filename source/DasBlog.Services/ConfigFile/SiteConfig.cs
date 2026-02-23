@@ -128,10 +128,6 @@ namespace DasBlog.Services.ConfigFile
         public string ProfilesDir { get; set; }
         public string BinariesDirRelative { get; set; }
         public string SmtpServer { get; set; }
-        public bool ApplyContentFiltersToWeb { get; set; }
-        public bool ApplyContentFiltersToRSS { get; set; }
-        public ContentFilterCollection ContentFilters { get; set; }
-        public ContentFilter[] ContentFilterArray { get; set; }
         public CrosspostSiteCollection CrosspostSites { get; set; }
         public CrosspostSite[] CrosspostSiteArray { get; set; }
         public bool EnableReferralUrlBlackList { get; set; }
@@ -175,14 +171,10 @@ namespace DasBlog.Services.ConfigFile
         public string CommentsGravatarBorder { get; set; }
         public string CommentsGravatarRating { get; set; }
         public bool CommentsRequireApproval { get; set; }
-        public bool CommentsAllowHtml { get; set; }
-
-        public bool EnableCoComment { get; set; }
-        public bool EnableSpamBlockingService { get; set; }
-        public string SpamBlockingServiceApiKey { get; set; }
+		public bool CommentsAllowHtml { get; set; }
 
 		[XmlIgnore]
-        public ISpamBlockingService SpamBlockingService { get; set; }
+		public ISpamBlockingService SpamBlockingService { get; set; }
         public bool EnableSpamModeration { get; set; }
         public int EntriesPerPage { get; set; }
         public bool EnableDailyReportEmail { get; set; }
