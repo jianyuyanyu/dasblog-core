@@ -204,9 +204,6 @@
     @Html.HiddenFor(@m => m.SiteConfig.ObfuscateEmail)
 
     @Html.HiddenFor(@m => m.SiteConfig.CommentsAllowHtml)
-    @Html.HiddenFor(@m => m.SiteConfig.SendReferralsByEmail)
-    @Html.HiddenFor(@m => m.SiteConfig.SendTrackbacksByEmail)
-    @Html.HiddenFor(@m => m.SiteConfig.SendPingbacksByEmail)
     @Html.HiddenFor(@m => m.SiteConfig.SendPostsByEmail)
     @Html.HiddenFor(@m => m.SiteConfig.EnableCommentApi)
     @Html.HiddenFor(@m => m.SiteConfig.EnableConfigEditService)
@@ -220,28 +217,10 @@
     @Html.HiddenFor(@m => m.SiteConfig.EnableCrossposts)
 
     @Html.HiddenFor(@m => m.SiteConfig.UseUserCulture)
-    @Html.HiddenFor(@m => m.SiteConfig.ExtensionlessUrls)
     @Html.HiddenFor(@m => m.SiteConfig.EnableAggregatorBugging)
 
     @Html.HiddenFor(@m => m.SiteConfig.EnableClickThrough)
 
-    @Html.HiddenFor(@m => m.SiteConfig.EnablePop3)
-    @Html.HiddenFor(@m => m.SiteConfig.Pop3InlineAttachedPictures)
-    @Html.HiddenFor(@m => m.SiteConfig.Pop3InlinedAttachedPicturesThumbHeight)
-
-    @Html.HiddenFor(@m => m.SiteConfig.ApplyContentFiltersToWeb)
-    @Html.HiddenFor(@m => m.SiteConfig.ApplyContentFiltersToRSS)
-    @Html.HiddenFor(@m => m.SiteConfig.EnableXSSUpstream)
-
-    @Html.HiddenFor(@m => m.SiteConfig.XSSUpstreamEndpoint)
-    @Html.HiddenFor(@m => m.SiteConfig.XSSUpstreamUsername)
-    @Html.HiddenFor(@m => m.SiteConfig.XSSUpstreamPassword)
-
-    @Html.HiddenFor(@m => m.SiteConfig.XSSRSSFilename)
-    @Html.HiddenFor(@m => m.SiteConfig.XSSUpstreamInterval)
-
-    @Html.HiddenFor(@m => m.SiteConfig.Pop3DeleteAllMessages)
-    @Html.HiddenFor(@m => m.SiteConfig.Pop3LogIgnoredEmails)
     @Html.HiddenFor(@m => m.SiteConfig.EnableReferralUrlBlackList)
 
     @Html.HiddenFor(@m => m.SiteConfig.ReferralUrlBlackList)
@@ -256,7 +235,6 @@
 
     @Html.HiddenFor(@m => m.SiteConfig.EnableEntryReferrals)
     @Html.HiddenFor(@m => m.SiteConfig.FeedBurnerName)
-    @Html.HiddenFor(@m => m.SiteConfig.SupressEmailAddressDisplay)
 
     @Html.HiddenFor(@m => m.SiteConfig.LogBlockedReferrals)
     @Html.HiddenFor(@m => m.SiteConfig.UseFeedSchemeForSyndication)
@@ -268,16 +246,10 @@
 
     @Html.HiddenFor(@m => m.SiteConfig.CommentsGravatarBorder)
     @Html.HiddenFor(@m => m.SiteConfig.CommentsGravatarRating)
-    @Html.HiddenFor(@m => m.SiteConfig.EnableCoComment)
 
-    @Html.HiddenFor(@m => m.SiteConfig.EnableSpamBlockingService)
-    @Html.HiddenFor(@m => m.SiteConfig.SpamBlockingServiceApiKey)
     @Html.HiddenFor(@m => m.SiteConfig.EnableSpamModeration)
 
     @Html.HiddenFor(@m => m.SiteConfig.EnableDailyReportEmail)
-
-    @Html.HiddenFor(@m => m.SiteConfig.EnableGoogleMaps)
-    @Html.HiddenFor(@m => m.SiteConfig.GoogleMapsApiKey)
 
     @Html.HiddenFor(@m => m.SiteConfig.EnableGeoRss)
     @Html.HiddenFor(@m => m.SiteConfig.DefaultLatitude)
@@ -285,13 +257,7 @@
 
     @Html.HiddenFor(@m => m.SiteConfig.EnableDefaultLatLongForNonGeoCodedPosts)
     @Html.HiddenFor(@m => m.SiteConfig.HtmlTidyContent)
-    @Html.HiddenFor(@m => m.SiteConfig.ResolveCommenterIP)
 
-    @Html.HiddenFor(@m => m.SiteConfig.AllowOpenIdComments)
-    @Html.HiddenFor(@m => m.SiteConfig.AllowOpenIdAdmin)
-    @Html.HiddenFor(@m => m.SiteConfig.BypassSpamOpenIdComment)
-
-    @Html.HiddenFor(@m => m.SiteConfig.AMPPagesEnabled)
     @Html.HiddenFor(@m => m.SiteConfig.RSSEndPointRewrite)
 
 

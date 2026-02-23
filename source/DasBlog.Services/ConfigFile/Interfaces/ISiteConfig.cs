@@ -94,12 +94,6 @@ namespace DasBlog.Services.ConfigFile.Interfaces
 
         bool SendCommentsByEmail { get; set; }
 
-        bool SendReferralsByEmail { get; set; }
-
-        bool SendTrackbacksByEmail { get; set; }
-
-        bool SendPingbacksByEmail { get; set; }
-
         bool SendPostsByEmail { get; set; }
 
         string TinyMCEApiKey { get; set; }
@@ -158,52 +152,8 @@ namespace DasBlog.Services.ConfigFile.Interfaces
 
         string SmtpServer { get; set; }
 
-        bool EnablePop3 { get; set; }
-
-        string Pop3Server { get; set; }
-
-        string Pop3Username { get; set; }
-
-        string Pop3Password { get; set; }
-
-        string Pop3SubjectPrefix { get; set; }
-
-        int Pop3Interval { get; set; }
-
-        bool Pop3InlineAttachedPictures { get; set; }
-
-        int Pop3InlinedAttachedPicturesThumbHeight { get; set; }
-
-        bool ApplyContentFiltersToWeb { get; set; }
-
-        bool ApplyContentFiltersToRSS { get; set; }
-
-        bool EnableXSSUpstream { get; set; }
-
-        string XSSUpstreamEndpoint { get; set; }
-
-        string XSSUpstreamUsername { get; set; }
-
-        string XSSUpstreamPassword { get; set; }
-
-        string XSSRSSFilename { get; set; }
-
-        int XSSUpstreamInterval { get; set; }
-
-        [XmlIgnore]
-        ContentFilterCollection ContentFilters { get; set; }
-
-        ContentFilter[] ContentFilterArray { get; set; }
-
         [XmlIgnore]
         CrosspostSiteCollection CrosspostSites { get; set; }
-
-        [XmlArray("CrosspostSites")]
-        CrosspostSite[] CrosspostSiteArray { get; set; }
-
-        bool Pop3DeleteAllMessages { get; set; }
-
-        bool Pop3LogIgnoredEmails { get; set; }
 
         bool EnableReferralUrlBlackList { get; set; }
 
@@ -228,8 +178,6 @@ namespace DasBlog.Services.ConfigFile.Interfaces
         bool EnableCrossPostFooter { get; set; }
 
         string CrossPostFooter { get; set; }
-
-        bool ExtensionlessUrls { get; set; }
 
         bool EnableTitlePermaLink { get; set; }
 
@@ -257,8 +205,6 @@ namespace DasBlog.Services.ConfigFile.Interfaces
         int DaysCommentsAllowed { get; set; }
 
         bool EnableCommentDays { get; set; }
-
-        bool SupressEmailAddressDisplay { get; set; }
 
         string EntryEditControl { get; set; }
 
@@ -291,21 +237,12 @@ namespace DasBlog.Services.ConfigFile.Interfaces
 		[XmlIgnore]
 		PingServiceCollection PingServices { get; set; }
 
-		[XmlArray("PingServices", IsNullable = true)]
-		PingService[] PingServiceArray { get; set; }
-
 		ValidCommentTags [] ValidCommentTags { get; set; }
 
-		bool EnableCoComment { get; set; }
+		[XmlIgnore]
+		ISpamBlockingService SpamBlockingService { get; set; }
 
-        bool EnableSpamBlockingService { get; set; }
-
-        string SpamBlockingServiceApiKey { get; set; }
-
-        [XmlIgnore]
-        ISpamBlockingService SpamBlockingService { get; set; }
-
-        bool EnableSpamModeration { get; set; }
+		bool EnableSpamModeration { get; set; }
 
         int EntriesPerPage { get; set; }
 
@@ -314,10 +251,6 @@ namespace DasBlog.Services.ConfigFile.Interfaces
         bool UseSSLForSMTP { get; set; }
 
         string PreferredBloggingAPI { get; set; }
-
-        bool EnableGoogleMaps { get; set; }
-
-        string GoogleMapsApiKey { get; set; }
 
         bool EnableGeoRss { get; set; }
 
@@ -329,17 +262,7 @@ namespace DasBlog.Services.ConfigFile.Interfaces
 
         bool HtmlTidyContent { get; set; }
 
-        bool ResolveCommenterIP { get; set; }
-
-        bool AllowOpenIdComments { get; set; }
-
-        bool AllowOpenIdAdmin { get; set; }
-
-        bool BypassSpamOpenIdComment { get; set; }
-
         string TitlePermalinkSpaceReplacement { get; set; }
-
-        bool AMPPagesEnabled { get; set; }
 
         string RSSEndPointRewrite { get; set; }
 

@@ -96,9 +96,6 @@ namespace DasBlog.Services.ConfigFile
         public bool ObfuscateEmail { get; set; }
         public string NotificationEMailAddress { get; set; }
         public bool SendCommentsByEmail { get; set; }
-        public bool SendReferralsByEmail { get; set; }
-        public bool SendTrackbacksByEmail { get; set; }
-        public bool SendPingbacksByEmail { get; set; }
         public bool SendPostsByEmail { get; set; }
         public string TinyMCEApiKey { get; set; }
         public bool EnableBloggerApi { get; set; }
@@ -131,28 +128,7 @@ namespace DasBlog.Services.ConfigFile
         public string ProfilesDir { get; set; }
         public string BinariesDirRelative { get; set; }
         public string SmtpServer { get; set; }
-        public bool EnablePop3 { get; set; }
-        public string Pop3Server { get; set; }
-        public string Pop3Username { get; set; }
-        public string Pop3Password { get; set; }
-        public string Pop3SubjectPrefix { get; set; }
-        public int Pop3Interval { get; set; }
-        public bool Pop3InlineAttachedPictures { get; set; }
-        public int Pop3InlinedAttachedPicturesThumbHeight { get; set; }
-        public bool ApplyContentFiltersToWeb { get; set; }
-        public bool ApplyContentFiltersToRSS { get; set; }
-        public bool EnableXSSUpstream { get; set; }
-        public string XSSUpstreamEndpoint { get; set; }
-        public string XSSUpstreamUsername { get; set; }
-        public string XSSUpstreamPassword { get; set; }
-        public string XSSRSSFilename { get; set; }
-        public int XSSUpstreamInterval { get; set; }
-        public ContentFilterCollection ContentFilters { get; set; }
-        public ContentFilter[] ContentFilterArray { get; set; }
         public CrosspostSiteCollection CrosspostSites { get; set; }
-        public CrosspostSite[] CrosspostSiteArray { get; set; }
-        public bool Pop3DeleteAllMessages { get; set; }
-        public bool Pop3LogIgnoredEmails { get; set; }
         public bool EnableReferralUrlBlackList { get; set; }
         public string ReferralUrlBlackList { get; set; }
         public string[] ReferralUrlBlackListArray { get; set; }
@@ -165,7 +141,6 @@ namespace DasBlog.Services.ConfigFile
         public string ChannelImageUrl { get; set; }
         public bool EnableCrossPostFooter { get; set; }
         public string CrossPostFooter { get; set; }
-        public bool ExtensionlessUrls { get; set; }
         public bool EnableTitlePermaLink { get; set; }
         public bool EnableTitlePermaLinkUnique { get; set; }
         public bool EnableTitlePermaLinkSpaces { get; set; }
@@ -177,12 +152,10 @@ namespace DasBlog.Services.ConfigFile
         public string RssLanguage { get; set; }
         public bool EnableSearchHighlight { get; set; }
         public bool EnableEntryReferrals { get; set; }
-        public PingService[] PingServiceArray { get; set; }
         public PingServiceCollection PingServices { get; set; }
         public string FeedBurnerName { get; set; }
         public int DaysCommentsAllowed { get; set; }
         public bool EnableCommentDays { get; set; }
-        public bool SupressEmailAddressDisplay { get; set; }
         public string EntryEditControl { get; set; }
         public bool LogBlockedReferrals { get; set; }
         public bool ShowCommentsWhenViewingEntry { get; set; }
@@ -196,32 +169,21 @@ namespace DasBlog.Services.ConfigFile
         public string CommentsGravatarBorder { get; set; }
         public string CommentsGravatarRating { get; set; }
         public bool CommentsRequireApproval { get; set; }
-        public bool CommentsAllowHtml { get; set; }
-
-        public bool EnableCoComment { get; set; }
-        public bool EnableSpamBlockingService { get; set; }
-        public string SpamBlockingServiceApiKey { get; set; }
+		public bool CommentsAllowHtml { get; set; }
 
 		[XmlIgnore]
-        public ISpamBlockingService SpamBlockingService { get; set; }
+		public ISpamBlockingService SpamBlockingService { get; set; }
         public bool EnableSpamModeration { get; set; }
         public int EntriesPerPage { get; set; }
         public bool EnableDailyReportEmail { get; set; }
         public bool UseSSLForSMTP { get; set; }
         public string PreferredBloggingAPI { get; set; }
-        public bool EnableGoogleMaps { get; set; }
-        public string GoogleMapsApiKey { get; set; }
         public bool EnableGeoRss { get; set; }
         public double DefaultLatitude { get; set; }
         public double DefaultLongitude { get; set; }
         public bool EnableDefaultLatLongForNonGeoCodedPosts { get; set; }
         public bool HtmlTidyContent { get; set; }
-        public bool ResolveCommenterIP { get; set; }
-        public bool AllowOpenIdComments { get; set; }
-        public bool AllowOpenIdAdmin { get; set; }
-        public bool BypassSpamOpenIdComment { get; set; }
         public string TitlePermalinkSpaceReplacement { get; set; }
-        public bool AMPPagesEnabled { get; set; }
         public string RSSEndPointRewrite { get; set; }
         public string CheesySpamQ { get; set; }
         public string CheesySpamA { get; set; }
