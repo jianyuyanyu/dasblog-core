@@ -138,12 +138,6 @@ namespace DasBlog.Services.ConfigFile
         public int Pop3InlinedAttachedPicturesThumbHeight { get; set; }
         public bool ApplyContentFiltersToWeb { get; set; }
         public bool ApplyContentFiltersToRSS { get; set; }
-        public bool EnableXSSUpstream { get; set; }
-        public string XSSUpstreamEndpoint { get; set; }
-        public string XSSUpstreamUsername { get; set; }
-        public string XSSUpstreamPassword { get; set; }
-        public string XSSRSSFilename { get; set; }
-        public int XSSUpstreamInterval { get; set; }
         public ContentFilterCollection ContentFilters { get; set; }
         public ContentFilter[] ContentFilterArray { get; set; }
         public CrosspostSiteCollection CrosspostSites { get; set; }

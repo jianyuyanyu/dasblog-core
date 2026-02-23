@@ -341,12 +341,6 @@ namespace DasBlog.Web.Models.AdminViewModels
 		public int Pop3InlinedAttachedPicturesThumbHeight { get; set; }
 		public bool ApplyContentFiltersToWeb { get; set; }
 		public bool ApplyContentFiltersToRSS { get; set; }
-		public bool EnableXSSUpstream { get; set; }
-		public string XSSUpstreamEndpoint { get; set; }
-		public string XSSUpstreamUsername { get; set; }
-		public string XSSUpstreamPassword { get; set; }
-		public string XSSRSSFilename { get; set; }
-		public int XSSUpstreamInterval { get; set; }
 		public bool Pop3DeleteAllMessages { get; set; }
 		public bool Pop3LogIgnoredEmails { get; set; }
 		public bool EnableReferralUrlBlackList { get; set; }

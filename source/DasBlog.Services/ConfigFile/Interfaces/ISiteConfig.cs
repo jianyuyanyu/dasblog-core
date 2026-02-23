@@ -172,18 +172,6 @@ namespace DasBlog.Services.ConfigFile.Interfaces
 
         bool ApplyContentFiltersToRSS { get; set; }
 
-        bool EnableXSSUpstream { get; set; }
-
-        string XSSUpstreamEndpoint { get; set; }
-
-        string XSSUpstreamUsername { get; set; }
-
-        string XSSUpstreamPassword { get; set; }
-
-        string XSSRSSFilename { get; set; }
-
-        int XSSUpstreamInterval { get; set; }
-
         [XmlIgnore]
         ContentFilterCollection ContentFilters { get; set; }
 

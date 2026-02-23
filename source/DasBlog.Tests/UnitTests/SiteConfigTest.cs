@@ -70,12 +70,6 @@ namespace DasBlog.Tests.UnitTests
 		public int Pop3InlinedAttachedPicturesThumbHeight { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public bool ApplyContentFiltersToWeb { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public bool ApplyContentFiltersToRSS { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-		public bool EnableXSSUpstream { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-		public string XSSUpstreamEndpoint { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-		public string XSSUpstreamUsername { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-		public string XSSUpstreamPassword { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-		public string XSSRSSFilename { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-		public int XSSUpstreamInterval { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public ContentFilterCollection ContentFilters { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public ContentFilter[] ContentFilterArray { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public CrosspostSiteCollection CrosspostSites { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
