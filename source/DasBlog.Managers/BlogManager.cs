@@ -174,8 +174,8 @@ namespace DasBlog.Managers
 				if (entry.Categories == null)
 					entry.Categories = "";
 
-				rtn = dataService.SaveEntry(entry, MaybeBuildWeblogPingInfo(), entry.IsPublic
-											? trackbackList : null, MaybeBuildPingbackInfo(entry), crosspostList);
+				rtn = dataService.SaveEntry(entry, entry.IsPublic
+											? trackbackList : null, crosspostList);
 
 				//TODO: SendEmail(entry, siteConfig, logService);
 			}
@@ -195,44 +195,6 @@ namespace DasBlog.Managers
 			// BreakCache(entry.GetSplitCategories());
 
 			return rtn;
-		}
-
-		/// <summary>
-		/// not sure what this is about but it is legacy
-		/// TODO: reconsider when strategy for handling pingback in legacy site.config is decided.
-		/// </summary>
-		private WeblogUpdatePingInfo MaybeBuildWeblogPingInfo()
-		{
-			var fakePingServices = new PingServiceCollection
-			{
-				new PingService
-				{
-					Endpoint = "http://ping.feedburner.com",
-					Name = "FeedBurner",
-					Url = "http://www.feedburner.com",
-					PingApi = PingService.PingApiType.Basic
-				}
-			};
-			return
-				fakePingServices.Count > 0
-				? new WeblogUpdatePingInfo(dasBlogSettings.SiteConfiguration.Title,
-												dasBlogSettings.SiteConfiguration.Root,
-												dasBlogSettings.PingBackUrl,
-												dasBlogSettings.RssUrl,
-												fakePingServices)
-				: null;
-		}
-
-		/// <summary>
-		/// not sure what this is about but it is legacy
-		/// TODO: reconsider when strategy for handling pingback in legacy site.config is decided.
-		/// </summary>
-		private PingbackInfo MaybeBuildPingbackInfo(Entry entry)
-		{
-			return dasBlogSettings.SiteConfiguration.EnableAutoPingback && entry.IsPublic
-				? new PingbackInfo(dasBlogSettings.GetPermaLinkUrl(entry.EntryId), entry.Title,
-									entry.Description, dasBlogSettings.SiteConfiguration.Title) 
-				: null;
 		}
 
 		public CategoryCacheEntryCollection GetCategories()

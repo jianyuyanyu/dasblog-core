@@ -102,8 +102,6 @@ namespace DasBlog.Services.ConfigFile.Interfaces
 
 		bool AllowMarkdownInComments {get; set;}
 
-		bool EnableAutoPingback { get; set; }
-
 		bool ShowCommentCount { get; set; }
 
 		bool EnableStartPageCaching { get; set; }
@@ -179,10 +177,7 @@ namespace DasBlog.Services.ConfigFile.Interfaces
 
         bool CommentsRequireApproval { get; set; }
 
-        bool CommentsAllowHtml { get; set; }
-
-		[XmlIgnore]
-		PingServiceCollection PingServices { get; set; }
+		bool CommentsAllowHtml { get; set; }
 
 		ValidCommentTags [] ValidCommentTags { get; set; }
 

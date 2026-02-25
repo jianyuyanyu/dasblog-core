@@ -100,7 +100,6 @@ namespace DasBlog.Services.ConfigFile
         public bool EnableBloggerApi { get; set; }
         public bool EnableComments { get; set; }
         public bool AllowMarkdownInComments {get; set;}
-        public bool EnableAutoPingback { get; set; }
         public bool ShowCommentCount { get; set; }
         public bool EnableStartPageCaching { get; set; }
 		public bool EnableRewritingHashtagsToCategoryLinks { get; set; }
@@ -129,7 +128,6 @@ namespace DasBlog.Services.ConfigFile
         public string SmtpPassword { get; set; }
         public string RssLanguage { get; set; }
         public bool EnableSearchHighlight { get; set; }
-        public PingServiceCollection PingServices { get; set; }
         public int DaysCommentsAllowed { get; set; }
         public bool EnableCommentDays { get; set; }
         public string EntryEditControl { get; set; }

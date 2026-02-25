@@ -36,7 +36,6 @@ namespace DasBlog.Tests.UnitTests
 		public bool EnableBloggerApi { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public string TinyMCEApiKey { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public bool EnableComments { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-		public bool EnableAutoPingback { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public bool EnableStartPageCaching { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public int DisplayTimeZoneIndex { get => 4; set => throw new NotImplementedException(); }
 		public bool AdjustDisplayTimeZone { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
@@ -60,7 +59,6 @@ namespace DasBlog.Tests.UnitTests
 		public string SmtpFromEmail { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public string RssLanguage { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public bool EnableSearchHighlight { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-		public PingServiceCollection PingServices { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public int DaysCommentsAllowed { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public bool EnableCommentDays { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public string EntryEditControl { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
