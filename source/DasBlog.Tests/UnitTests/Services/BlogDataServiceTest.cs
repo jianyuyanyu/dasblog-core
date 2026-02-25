@@ -24,7 +24,7 @@ namespace DasBlog.Tests.UnitTests.Services
 			var returnEntry = blogdataservice.GetEntry(entry.EntryId);
 			Assert.Equal(0, entry.CompareTo(returnEntry));
 
-			blogdataservice.DeleteEntry(entry.EntryId, null);
+			blogdataservice.DeleteEntry(entry.EntryId);
 
 			var entryFailRetrieval = blogdataservice.GetEntry(entry.EntryId);
 			Assert.Null(entryFailRetrieval);
@@ -43,7 +43,7 @@ namespace DasBlog.Tests.UnitTests.Services
 			var returnEntry = blogdataservice.GetEntryForEdit(entry.EntryId);
 			Assert.NotNull(returnEntry);
 
-			blogdataservice.DeleteEntry(entry.EntryId, null);
+			blogdataservice.DeleteEntry(entry.EntryId);
 
 			var entryFailRetrieval = blogdataservice.GetEntry(entry.EntryId);
 			Assert.Null(entryFailRetrieval);
@@ -71,7 +71,7 @@ namespace DasBlog.Tests.UnitTests.Services
 			var entryAfterUpdate = blogdataservice.GetEntry(entry.EntryId);
 			Assert.True(entryAfterUpdate.Title == "Test Entry 4");
 
-			blogdataservice.DeleteEntry(entry.EntryId, null);
+			blogdataservice.DeleteEntry(entry.EntryId);
 		}
 
 		[Theory]

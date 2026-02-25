@@ -129,7 +129,7 @@ namespace DasBlog.Managers
 		public void DeleteEntry(string postid)
 		{
 			var entry = GetEntryForEdit(postid);
-			dataService.DeleteEntry(postid, null);
+			dataService.DeleteEntry(postid);
 
 			LogEvent(EventCodes.EntryDeleted, entry);
 		}
@@ -160,15 +160,6 @@ namespace DasBlog.Managers
 		{
 
 			EntrySaveState rtn = EntrySaveState.Failed;
-			// we want to prepopulate the cross post collection with the crosspost footer
-			if (dasBlogSettings.SiteConfiguration.EnableCrossPostFooter && dasBlogSettings.SiteConfiguration.CrossPostFooter != null 
-				&& dasBlogSettings.SiteConfiguration.CrossPostFooter.Length > 0)
-			{
-				foreach (CrosspostInfo info in crosspostList)
-				{
-					info.CrossPostFooter = dasBlogSettings.SiteConfiguration.CrossPostFooter;
-				}
-			}
 
 			// now save the entry, passign in all the necessary Trackback and Pingback info.
 			try
@@ -183,8 +174,8 @@ namespace DasBlog.Managers
 				if (entry.Categories == null)
 					entry.Categories = "";
 
-				rtn = dataService.SaveEntry(entry, MaybeBuildWeblogPingInfo(), entry.IsPublic
-											? trackbackList : null, MaybeBuildPingbackInfo(entry), crosspostList);
+				rtn = dataService.SaveEntry(entry, entry.IsPublic
+											? trackbackList : null, crosspostList);
 
 				//TODO: SendEmail(entry, siteConfig, logService);
 			}
@@ -204,44 +195,6 @@ namespace DasBlog.Managers
 			// BreakCache(entry.GetSplitCategories());
 
 			return rtn;
-		}
-
-		/// <summary>
-		/// not sure what this is about but it is legacy
-		/// TODO: reconsider when strategy for handling pingback in legacy site.config is decided.
-		/// </summary>
-		private WeblogUpdatePingInfo MaybeBuildWeblogPingInfo()
-		{
-			var fakePingServices = new PingServiceCollection
-			{
-				new PingService
-				{
-					Endpoint = "http://ping.feedburner.com",
-					Name = "FeedBurner",
-					Url = "http://www.feedburner.com",
-					PingApi = PingService.PingApiType.Basic
-				}
-			};
-			return
-				fakePingServices.Count > 0
-				? new WeblogUpdatePingInfo(dasBlogSettings.SiteConfiguration.Title,
-												dasBlogSettings.SiteConfiguration.Root,
-												dasBlogSettings.PingBackUrl,
-												dasBlogSettings.RssUrl,
-												fakePingServices)
-				: null;
-		}
-
-		/// <summary>
-		/// not sure what this is about but it is legacy
-		/// TODO: reconsider when strategy for handling pingback in legacy site.config is decided.
-		/// </summary>
-		private PingbackInfo MaybeBuildPingbackInfo(Entry entry)
-		{
-			return dasBlogSettings.SiteConfiguration.EnableAutoPingback && entry.IsPublic
-				? new PingbackInfo(dasBlogSettings.GetPermaLinkUrl(entry.EntryId), entry.Title,
-									entry.Description, dasBlogSettings.SiteConfiguration.Title) 
-				: null;
 		}
 
 		public CategoryCacheEntryCollection GetCategories()

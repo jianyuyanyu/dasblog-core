@@ -102,8 +102,6 @@ namespace DasBlog.Services.ConfigFile.Interfaces
 
 		bool AllowMarkdownInComments {get; set;}
 
-		bool EnableAutoPingback { get; set; }
-
 		bool ShowCommentCount { get; set; }
 
 		bool EnableStartPageCaching { get; set; }
@@ -126,9 +124,6 @@ namespace DasBlog.Services.ConfigFile.Interfaces
 
         string SmtpServer { get; set; }
 
-        [XmlIgnore]
-        CrosspostSiteCollection CrosspostSites { get; set; }
-
         bool EnableCaptcha { get; set; }
 
         string RecaptchaSiteKey { get; set; }
@@ -138,10 +133,6 @@ namespace DasBlog.Services.ConfigFile.Interfaces
         double RecaptchaMinimumScore { get; set; }
 
         string ChannelImageUrl { get; set; }
-
-        bool EnableCrossPostFooter { get; set; }
-
-        string CrossPostFooter { get; set; }
 
         bool EnableTitlePermaLink { get; set; }
 
@@ -186,10 +177,7 @@ namespace DasBlog.Services.ConfigFile.Interfaces
 
         bool CommentsRequireApproval { get; set; }
 
-        bool CommentsAllowHtml { get; set; }
-
-		[XmlIgnore]
-		PingServiceCollection PingServices { get; set; }
+		bool CommentsAllowHtml { get; set; }
 
 		ValidCommentTags [] ValidCommentTags { get; set; }
 
