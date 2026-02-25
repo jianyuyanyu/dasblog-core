@@ -130,7 +130,7 @@ namespace newtelligence.DasBlog.Runtime
 		/// 
 		/// </summary>
 		/// <param name="entryId"></param>
-		void DeleteEntry( string entryId, CrosspostSiteCollection crosspostSites );
+		void DeleteEntry( string entryId );
 		/// <summary>
 		/// 
 		/// </summary>

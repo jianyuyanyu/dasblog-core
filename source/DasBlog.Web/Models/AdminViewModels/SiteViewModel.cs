@@ -318,8 +318,6 @@ namespace DasBlog.Web.Models.AdminViewModels
 		public bool EnableAutoPingback { get; set; }
 		public string ProfilesDir { get; set; }
 		public string BinariesDirRelative { get; set; }
-		public bool EnableCrossPostFooter { get; set; }
-		public string CrossPostFooter { get; set; }
 		public bool EnableTitlePermaLink { get; set; }
 		public bool EnableTitlePermaLinkSpaces { get; set; }
 		public string RssLanguage { get; set; }

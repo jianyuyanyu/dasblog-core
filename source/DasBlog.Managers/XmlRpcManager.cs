@@ -344,7 +344,7 @@ namespace DasBlog.Managers
 		{
 			VerifyAccess(username, password);
 
-			dataService.DeleteEntry(postid, null);
+			dataService.DeleteEntry(postid);
 
 			return true;
 		}

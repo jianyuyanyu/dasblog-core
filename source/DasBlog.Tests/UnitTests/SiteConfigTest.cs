@@ -38,7 +38,6 @@ namespace DasBlog.Tests.UnitTests
 		public bool EnableComments { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public bool EnableAutoPingback { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public bool EnableStartPageCaching { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-		public bool ShowItemDescriptionInAggregatedViews { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public int DisplayTimeZoneIndex { get => 4; set => throw new NotImplementedException(); }
 		public bool AdjustDisplayTimeZone { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public string ContentDir { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
@@ -47,14 +46,11 @@ namespace DasBlog.Tests.UnitTests
 		public string ProfilesDir { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public string BinariesDirRelative { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public string SmtpServer { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-		public CrosspostSiteCollection CrosspostSites { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public bool EnableCaptcha { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public string RecaptchaSiteKey { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public string RecaptchaSecretKey { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public double RecaptchaMinimumScore { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public string ChannelImageUrl { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-		public bool EnableCrossPostFooter { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-		public string CrossPostFooter { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public bool EnableTitlePermaLink { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public bool EnableTitlePermaLinkUnique { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public bool EnableTitlePermaLinkSpaces { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
@@ -79,7 +75,6 @@ namespace DasBlog.Tests.UnitTests
 		public string CommentsGravatarRating { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public bool CommentsRequireApproval { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public bool CommentsAllowHtml { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-		public string XmlAllowedTags { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public ISpamBlockingService SpamBlockingService { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public bool EnableSpamModeration { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 		public int EntriesPerPage { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }

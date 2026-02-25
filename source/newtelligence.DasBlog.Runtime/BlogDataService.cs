@@ -725,75 +725,23 @@ namespace newtelligence.DasBlog.Runtime
             return dayList.ToArray();
         }
 
-        void IBlogDataService.DeleteEntry(string entryId, CrosspostSiteCollection crosspostSites)
-        {
-            DateTime foundDate = GetDateForEntry(entryId);
-            if (foundDate == DateTime.MinValue)
-                return;
+		void IBlogDataService.DeleteEntry(string entryId)
+		{
+			DateTime foundDate = GetDateForEntry(entryId);
+			if (foundDate == DateTime.MinValue)
+				return;
 
-            DayEntry day = InternalGetDayEntry(foundDate);
-            Entry currentEntry = day.Entries[entryId];
+			DayEntry day = InternalGetDayEntry(foundDate);
+			Entry currentEntry = day.Entries[entryId];
 
-            if (currentEntry != null)
-            {
-                if (crosspostSites != null)
-                {
-                    //foreach (Crosspost cp in currentEntry.Crossposts)
-                    //{
-                    //    foreach (CrosspostSite site in crosspostSites)
-                    //    {
-                    //        if (site.ProfileName == cp.ProfileName)
-                    //        {
-                    //            try
-                    //            {
-                    //                BloggerAPIClientProxy proxy = new BloggerAPIClientProxy();
-                    //                UriBuilder uriBuilder = new UriBuilder("http", site.HostName, site.Port, site.Endpoint);
-                    //                proxy.Url = uriBuilder.ToString();
-                    //                proxy.UserAgent = this.UserAgent;
+			if (currentEntry != null)
+			{
+				day.Entries.Remove(currentEntry);
+			}
 
-                    //                proxy.blogger_deletePost("", cp.TargetEntryId, site.Username, site.Password, true);
-
-                    //                if (loggingService != null)
-                    //                {
-                    //                    loggingService.AddEvent(
-                    //                        new EventDataItem(EventCodes.CrosspostDeleted, currentEntry.Title, site.ProfileName));
-                    //                }
-                    //            }
-                    //            catch (XmlRpcFaultException xrfe)
-                    //            {
-                    //                ErrorTrace.Trace(TraceLevel.Error, xrfe);
-                    //                if (loggingService != null)
-                    //                {
-                    //                    loggingService.AddEvent(
-                    //                        new EventDataItem(EventCodes.Error,
-                    //                        xrfe.Message,
-                    //                        String.Format("Deleting cross-post entry {0} on {1}; Failed with server-fault code, {2} \"{3}\"", cp.TargetEntryId, cp.ProfileName, xrfe.FaultCode, xrfe.FaultString)));
-                    //                }
-                    //            }
-                    //            catch (Exception e)
-                    //            {
-                    //                ErrorTrace.Trace(TraceLevel.Error, e);
-                    //                if (loggingService != null)
-                    //                {
-                    //                    loggingService.AddEvent(
-                    //                        new EventDataItem(EventCodes.Error,
-                    //                        e.ToString().Replace("\n", "<br />"),
-                    //                        String.Format("Deleting cross-post entry {0} from {1}", cp.TargetEntryId, cp.ProfileName)));
-                    //                }
-                    //            }
-                    //            break;
-                    //        }
-
-                    //    }
-                    //}
-                }
-
-                day.Entries.Remove(currentEntry);
-            }
-
-            day.Save(data);
-	        data.IncrementEntryChange();
-        }
+			day.Save(data);
+			data.IncrementEntryChange();
+		}
 
         EntrySaveState IBlogDataService.SaveEntry(Entry entry, params object[] trackingInfos)
         {

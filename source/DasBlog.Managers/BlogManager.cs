@@ -129,7 +129,7 @@ namespace DasBlog.Managers
 		public void DeleteEntry(string postid)
 		{
 			var entry = GetEntryForEdit(postid);
-			dataService.DeleteEntry(postid, null);
+			dataService.DeleteEntry(postid);
 
 			LogEvent(EventCodes.EntryDeleted, entry);
 		}
@@ -160,15 +160,6 @@ namespace DasBlog.Managers
 		{
 
 			EntrySaveState rtn = EntrySaveState.Failed;
-			// we want to prepopulate the cross post collection with the crosspost footer
-			if (dasBlogSettings.SiteConfiguration.EnableCrossPostFooter && dasBlogSettings.SiteConfiguration.CrossPostFooter != null 
-				&& dasBlogSettings.SiteConfiguration.CrossPostFooter.Length > 0)
-			{
-				foreach (CrosspostInfo info in crosspostList)
-				{
-					info.CrossPostFooter = dasBlogSettings.SiteConfiguration.CrossPostFooter;
-				}
-			}
 
 			// now save the entry, passign in all the necessary Trackback and Pingback info.
 			try
