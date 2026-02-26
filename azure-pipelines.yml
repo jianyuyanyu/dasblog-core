@@ -10,14 +10,14 @@ pool:
 
 variables:
   buildConfiguration: 'Release'
-  version: 8.2
+  version: 10.2
 
 steps:
 - task: UseDotNet@2
-  displayName: Installing .NET 8
+  displayName: Installing .NET 10
   inputs:
     packageType: 'sdk'
-    version: '8.x'
+    version: '10.x'
     installationPath: $(Agent.ToolsDirectory)/dotnet
 
 - task: PowerShell@2

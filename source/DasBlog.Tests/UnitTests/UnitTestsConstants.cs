@@ -4,15 +4,10 @@ namespace DasBlog.Tests.UnitTests
 {
 	public class UnitTestsConstants
 	{
-		private static readonly DirectoryInfo root = new DirectoryInfo(GetProjectBinaryDirectory());
+		private static readonly string root = Path.GetFullPath(Path.GetDirectoryName(typeof(UnitTestsConstants).Assembly.Location));
 
-		public static string TestContentLocation { get { return new DirectoryInfo(Path.Combine(root.Parent.FullName, "net8.0/TestContent")).FullName; } }
+		public static string TestContentLocation => Path.Combine(root, "TestContent");
 
-		public static string TestLoggingLocation { get { return new DirectoryInfo(Path.Combine(root.Parent.FullName, "net8.0/logs")).FullName; } }
-
-		public static string GetProjectBinaryDirectory()
-		{
-			return Path.GetFullPath(Path.GetDirectoryName(typeof(UnitTestsConstants).Assembly.Location));
-		}
+		public static string TestLoggingLocation => Path.Combine(root, "logs");
 	}
 }
